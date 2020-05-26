@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando 2 numeros</title>
+    <style>
+        h1 {
+            font: normal 20pt center;
+            background: indianred;
+            color: white;
+            width: 13cm;
+            height: 2cm;
+            line-height: 2cm;
+            text-align: center;
+        }
+        div#res {
+            color: white;
+            font: normal 20pt;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Numeros com JavaScipt</h1>
+    <input type="number" name="num1" id="num1"> +
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('num1')
+            var tn2 = window.document.getElementById('num2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerText = s
+        }
+    </script>
+</body>
+</html>
